@@ -9,6 +9,10 @@ namespace brass
 {
     public class WebElement
     {
+        const string find = @"window.find = function(pattern, parent){ return [(parent.outerHTML.indexOf(pattern) > 0) ? parent : null].concat(Array.from(parent.children).map(function(n){return find(pattern, n)} ))  }";
+        const string flatter = @"window.flatten = arr => arr.reduce((acc, val) => acc.concat(Array.isArray(val) ? flatten(val) : val), []);";
+        
+
         private IWebElement reference;
         private WebElement parent;
 

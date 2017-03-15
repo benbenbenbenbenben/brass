@@ -1,0 +1,10 @@
+﻿[
+  {
+    "outputFile": "JavaScript1.js",
+    "inputFile": "JavaScript1.es6"
+  },
+  {
+    "outputFile": "extensions.js",
+    "inputFile": "extensions.es6"
+  }
+]
